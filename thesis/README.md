@@ -13,7 +13,3 @@ You can compile the example document into a pdf using
 If you have any questions or comments email Prof. Mark Owkes mark.owkes@montana.edu
 
 Start with the Wiki: [https://bitbucket.org/markowkes/msu-latex/wiki/Home](https://bitbucket.org/markowkes/msu-latex/wiki/Home)
-
-A few useful links:
-- http://www.montana.edu/etd/format_standard.html
-- http://www.montana.edu/etd/archives/format_manuscript-archive.html
