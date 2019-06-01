@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.9)  31 MAY 2019 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  31 MAY 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,8 +783,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 125.
 
 Package hyperref Info: Option `plainpages' set `false' on input line 125.
-(./main.aux (./introduction.aux) (./theory.aux) (./conclusion.aux)
-(./appendixa.aux))
+(./main.aux (./introduction.aux) (./conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
@@ -1102,12 +1101,6 @@ l.133 \begin{preliminary}
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [5
-
-
-
-
-]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1144,12 +1137,6 @@ l.133 \begin{preliminary}
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [6
-
-
-
-
-]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1186,12 +1173,7 @@ l.133 \begin{preliminary}
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [7
 
-
-
-
-]
 ***************** Nomenclature ******************
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -1225,7 +1207,19 @@ l.133 \begin{preliminary}
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./nomenclature.tex) [8
+(./nomenclature.tex) [5
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1264,7 +1258,7 @@ l.133 \begin{preliminary}
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./abstract.tex) [9
+(./abstract.tex) [6
 
 
 
@@ -1274,116 +1268,56 @@ l.133 \begin{preliminary}
 
  (./introduction.tex
 *****************  Chapter 1. Introduction  *****************
+
+LaTeX Warning: Reference `CH:theory' on page 1 undefined on input line 2.
+
 [1
 
 
 
 
 ]) [2]
-\openout2 = `theory.aux'.
-
- (./theory.tex
-*****************  Chapter 2. Theory  *****************
-[3
-
-
-
-]
-<figs/plot.pdf, id=207, 228.47508pt x 154.51048pt>
-File: figs/plot.pdf Graphic file (type pdf)
-<use figs/plot.pdf>
-Package pdftex.def Info: figs/plot.pdf  used on input line 33.
-(pdftex.def)             Requested size: 260.17465pt x 175.95042pt.
-<figs/MSU.jpg, id=209, 491.8375pt x 332.24126pt>
-File: figs/MSU.jpg Graphic file (type jpg)
-<use figs/MSU.jpg>
-Package pdftex.def Info: figs/MSU.jpg  used on input line 44.
-(pdftex.def)             Requested size: 260.17465pt x 175.75749pt.
-File: figs/MSU.jpg Graphic file (type jpg)
-<use figs/MSU.jpg>
-Package pdftex.def Info: figs/MSU.jpg  used on input line 80.
-(pdftex.def)             Requested size: 260.17465pt x 175.75749pt.
- [4 <./figs/plot.pdf>] [5 <./figs/MSU.jpg>] [6]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 127.
- [7
-
-] [8]
-
-LaTeX Warning: Citation `owkes_mesh-decoupled_2015' on page 9 undefined on inpu
-t line 141.
-
-
-LaTeX Warning: Citation `desjardins_direct_2013' on page 9 undefined on input l
-ine 141.
-
-
-LaTeX Warning: Citation `owkes_discontinuous_2013' on page 9 undefined on input
- line 141.
-
-
-LaTeX Warning: Citation `owkes_computational_2014' on page 9 undefined on input
- line 141.
-
-) [9]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
-*****************  Chapter 3. Conclusion  *****************
-) [10
+*****************  Chapter 2. Conclusion  *****************
+) [3
 
 
 
 ]
 ***************** References Cited******************
 No file main.bbl.
-\openout2 = `appendixa.aux'.
-
-(./appendixa.tex
-LaTeX Info: Redefining \\ on input line 1.
-) [11
-
-
-
-
-]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
- (./main.aux (./introduction.aux) (./theory.aux)
-(./conclusion.aux) (./appendixa.aux))
+(./main.aux (./introduction.aux) (./conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 05789B0B523C76E5F77F66791798D6C8;1171.
+(rerunfilecheck)             Checksum: 4B94F322C8C73EFB7FE58804996928D3;706.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22528 strings out of 492982
- 415357 string characters out of 6134897
- 633837 words of memory out of 5000000
- 25546 multiletter control sequences out of 15000+600000
- 11584 words of font info for 42 fonts, out of 8000000 for 9000
+ 21707 strings out of 492982
+ 404669 string characters out of 6134895
+ 627837 words of memory out of 5000000
+ 24810 multiletter control sequences out of 15000+600000
+ 8253 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,815b,1535s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb>
-Output written on main.pdf (21 pages, 357174 bytes).
+ 59i,9n,94p,815b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (10 pages, 66435 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

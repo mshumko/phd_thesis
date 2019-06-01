@@ -6,18 +6,4 @@
 \contentsline {subsection}{Subsection With a Very Very Very Very\\ Very Very Very Very Very Very Long Title}{2}{subsubsection*.13}
 \contentsline {subsection}{Subsection With a Very Long Title}{2}{subsubsection*.13}
 \setcounter {tocdepth}{3}
-\contentsline {chapter}{\numberline {2.}\MakeUppercase {Theory}}{3}{chapter.2}
-\contentsline {section}{Equations}{3}{section*.14}
-\contentsline {subsection}{Symbols}{3}{subsection*.15}
-\contentsline {section}{Figures}{4}{section*.16}
-\contentsline {section}{Tables}{7}{section*.21}
-\contentsline {section}{Algorithms}{7}{section*.23}
-\contentsline {section}{References and Citations}{7}{section*.25}
-\contentsline {subsection}{Referencing other parts of the document}{7}{subsection*.26}
-\contentsline {subsection}{Citing others work}{9}{subsection*.27}
-\setcounter {tocdepth}{3}
-\contentsline {chapter}{\numberline {3.}\MakeUppercase {Conclusion}}{10}{chapter.3}
-\setcounter {tocdepth}{3}
-\contentsline {chapter}{\MakeUppercase {\MakeUppercase {Appendix}}: Example Code}{11}{appendix.A}
-\contentsline {chapter}{\MakeUppercase {References Cited}}{11}{section*.28}
-\setcounter {tocdepth}{3}
+\contentsline {chapter}{\numberline {2.}\MakeUppercase {Conclusion}}{3}{chapter.2}
