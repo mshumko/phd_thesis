@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  31 MAY 2019 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  2 JUN 2019 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,7 +783,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 125.
 
 Package hyperref Info: Option `plainpages' set `false' on input line 125.
-(./main.aux (./introduction.aux) (./conclusion.aux))
+(./main.aux (./introduction.aux
+
+LaTeX Warning: Label `Intro:acceleration' multiply defined.
+
+) (./conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
@@ -1258,20 +1262,16 @@ l.133 \begin{preliminary}
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./abstract.tex) [6
-
-
-
-
-]
+(./abstract.tex)
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
 *****************  Chapter 1. Introduction  *****************
-
-LaTeX Warning: Reference `CH:theory' on page 1 undefined on input line 2.
-
 [1
+
+
+
+
 
 
 
@@ -1294,30 +1294,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4B94F322C8C73EFB7FE58804996928D3;706.
+(rerunfilecheck)             Checksum: 725359BC4B445EF15248681224DF72BD;992.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21707 strings out of 492982
- 404669 string characters out of 6134895
- 627837 words of memory out of 5000000
- 24810 multiletter control sequences out of 15000+600000
- 8253 words of font info for 31 fonts, out of 8000000 for 9000
+ 21717 strings out of 492982
+ 404894 string characters out of 6134895
+ 629837 words of memory out of 5000000
+ 24815 multiletter control sequences out of 15000+600000
+ 8084 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,9n,94p,815b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,9n,94p,1002b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (10 pages, 66435 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (9 pages, 60760 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

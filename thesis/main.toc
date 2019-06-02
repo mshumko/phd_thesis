@@ -1,9 +1,14 @@
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {1.}\MakeUppercase {Introduction}}{1}{chapter.1}
-\contentsline {section}{Section}{1}{section*.11}
-\contentsline {subsection}{Subsection}{1}{subsection*.12}
-\contentsline {subsubsection}{Subsubsection}{2}{subsubsection*.13}
-\contentsline {subsection}{Subsection With a Very Very Very Very\\ Very Very Very Very Very Very Long Title}{2}{subsubsection*.13}
-\contentsline {subsection}{Subsection With a Very Long Title}{2}{subsubsection*.13}
+\contentsline {section}{Charged Particle Motion in Electric and Magnetic Fields}{2}{section*.11}
+\contentsline {section}{Particle Populations and Their Interractions in the Magnetosphere}{2}{section*.12}
+\contentsline {section}{Radiation Belts}{2}{section*.13}
+\contentsline {subsection}{Particle Acceleration}{2}{subsection*.14}
+\contentsline {subsubsection}{Adiabatic Heating}{2}{subsubsection*.15}
+\contentsline {subsubsection}{Wave Resonance Heating}{2}{subsubsection*.16}
+\contentsline {subsection}{Particle Losses}{2}{subsection*.17}
+\contentsline {subsubsection}{ElectroMagnetic Ion Cyclotron Wave Driven}{2}{subsubsection*.18}
+\contentsline {subsubsection}{Whistler Mode Chorus Wave Driven}{2}{subsubsection*.19}
+\contentsline {section}{Scope of Reserach}{2}{section*.20}
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {2.}\MakeUppercase {Conclusion}}{3}{chapter.2}
