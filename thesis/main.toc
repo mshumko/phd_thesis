@@ -7,8 +7,10 @@
 \contentsline {subsubsection}{Adiabatic Heating}{2}{subsubsection*.15}
 \contentsline {subsubsection}{Wave Resonance Heating}{2}{subsubsection*.16}
 \contentsline {subsection}{Particle Losses}{2}{subsection*.17}
-\contentsline {subsubsection}{ElectroMagnetic Ion Cyclotron Wave Driven}{2}{subsubsection*.18}
+\contentsline {subsubsection}{Electromagnetic Ion Cyclotron Wave Driven}{2}{subsubsection*.18}
 \contentsline {subsubsection}{Whistler Mode Chorus Wave Driven}{2}{subsubsection*.19}
 \contentsline {section}{Scope of Reserach}{2}{section*.20}
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {2.}\MakeUppercase {Conclusion}}{3}{chapter.2}
+\contentsline {chapter}{\MakeUppercase {References Cited}}{4}{section*.21}
+\setcounter {tocdepth}{3}

@@ -124,60 +124,12 @@
 	urlcolor=black %website links are black text
 }%
 
-% ================================ %
-%         Actual Document                                              %
-% ================================ %
 \begin{document}
 
-% Front matter...before your text
-\begin{preliminary} 
-
-  % Dedication page (optional, comment out if not using)
-  \begin{dedication} 
-    \input{dedication} 
-  \end{dedication}
-
-  % Acknowledgements page (optional, comment out if not using)
-  \begin{acknowledgements}
-    \input{acknow} 
-  \end{acknowledgements}
-
-  %vita page (optional, comment out if not using)
-  %\begin{vita}
-  %  \input{vita} 
-  %\end{vita}
-
-  % Table of Contents, List of Figures|Tables|etc.
-  \contents
-
-  % Nomenclature page (optional, comment out if not using)
-  \begin{nomen}
-    \input{nomenclature} 
-  \end{nomen}
-
-  % Abstract
-  \begin{abstract}
-    \input{abstract}
-  \end{abstract}
-\end{preliminary}
-
-% Dissertation chapters:  add/change as needed
 \include{introduction}
-%\include{theory}
-\include{conclusion}
-% Add additional chapters here
 
 % REFERENCES
 \bibliographystyle{abbrv} % Use a style you and your adviser like
 \references  %do not change this
 
-% APPENDIX
-% If you have an appendix use either the option appendsingle (1 appendix) or appendmultiple (>1 appendix) in your document class
-% If you do not have an appendix comment out below and remove the appendsingle/multiple option from the document class
-\appendix
-%\include{appendixa}
-%\include{appendixb}
-
 \end{document}
-% do not put anything after this
-
