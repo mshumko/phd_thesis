@@ -22,12 +22,18 @@ r = \frac{m v_\perp}{|q| B}
 J_i = \oint (\vec{p} + q \vec{A}) \cdot d\vec{l}
 \end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit.  With suitable integration, $J_1 \sim v_\perp^2 / B$ that is conserved as long as a driving force on the particle has a frequency much less than $\Omega$.
 
-The second highest frequency periodic motion is the bounce motion that is due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because the Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. This motion can be visualized \textcolor{red}{Include plots from 1997 Tsurutani SOME BASIC CONCEPTS INTERACTIONS OF WAVE PARTICLE IN COLLISIONLESS PLASMAS}
+The second highest frequency periodic motion is the bounce motion that is due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because the Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. First we need to define the concept of pitch angle $\alpha$ as the angle between the magnetic field and particle's velocity vectors. This is schematically shown in Fig. \ref{Intro:pa}a. The pitch angle relates $v$, $v_\perp$, and $v_{||}$ (the component of the particles velocity parallel to $\vec{B}$). As shown in \ref{Intro:pa}b and c, a larger $\alpha$ will tighten the particle's helix trajectory and vice versa.
+
+Assuming that the particle's kinetic energy is concerned, the conservation of $J_1$ implies that if we measure a particle's $v_\perp(i)$ and $B(i)$ at some initial position, we can calculate its $v_\perp(s)$ along the particle's path if we know $B(s)$ there
+
+\begin{equation}
+\frac{v_\perp^2 (i)}{B(i)} = \frac{v_\perp^2 (s)}{B(s)}
+\end{equation} 
 
 \begin{figure}
 \includegraphics[scale=1]{pitch_angle_and_helix.png}
 \caption{Charged particle motion in a uniform magnetic field $\vec{B}$. Panel (A) shows the geometry defining the pitch angle, $\alpha$. Panel (B) and (C) show two helical electron trajectories assuming a large and small $\alpha$ (corresponding to a small and large parallel velocity $v_{||}$), respectively.}
-\label{intro:pa}
+\label{Intro:pa}
 \end{figure}
 
 %This can be visualized as the particle exhibits helical motion around a magnetic field with some parallel velocity $\v_{||}$.
