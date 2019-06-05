@@ -6,15 +6,27 @@ A topic of interest in the space physics community is wave-particle intersection
 The goal of this dissertation is to study the wave-particle mechanism that scatters microbursts into Earth's atmosphere. This goal will be achieved by first introducing single charged particle motion in electric and magnetic fields, the major particle populations and how they couple in the magnetosphere, and then describe the history and current state of the fields relating to microbursts and wave-particle scattering
 
 \section{Charged Particle Motion in Electric and Magnetic Fields}\label{Intro:particle_motion}
-Charged particle motion in the magnetosphere, in particular inner magnetosphere ($< 8$ Re), can be approximated to first order by Earth's dipole magnetic field, and various electric fields. Here we describe three types of periodic motion that are experienced by charged particles in a dipolar magnetic fields. These motions are gyration, bounce, and drift and each of the three motions have a corresponding conserved quantity i.e. an adiabatic invariant. 
+A charged particle trapped in the magnetosphere will experience three types of periodic motion in Earth's nearly dipolar field. The three motions are ultimately due to the Lorentz force that a particle of momentum $\vec{p}$, charge $q$, and velocity $\vec{v}$ experiences in an electric field $\vec{E}$ and magnetic field $\vec{B}$ and is given by
+\begin{equation}
+\frac{d\vec{p}}{dt} = q(\vec{E} + \vec{v} \times \vec{B}).
+\end{equation} In the magnetosphere, the three periodic motions in decreasing frequency are gyration, bounce, and drift and each of these motions have a corresponding conserved quantity i.e. an adiabatic invariant. 
 
-Gyration is the first motion considered here and it arises when a charged particle is in a magnetic field with magnitude $B$. This motion is circular with a Larmor radius of 
+The highest frequency periodic motion is on the order of a kHz in the magnetosphere and is gyration about a magnetic field of magnitude $B$. This motion is circular with a Larmor radius of 
 \begin{equation}
 r = \frac{m v_\perp}{|q| B}
-\end{equation} where m is the mass, $v_\perp$ the velocity perpendicular to $B$, $q$ is the charge of the particle. This motion has a corresponding gyrofrequency given by 
+\end{equation} where $m$ is the mass and $v_\perp$ the particle velocity perpendicular to $\vec{B}$. This motion has a corresponding gyrofrequency 
 \begin{equation}
 \Omega = \frac{|q| B}{m}
-\end{equation} in units of radians/second.
+\end{equation} in units of radians/second. The corresponding adiabatic invariant can be found by integrating the particle's canonical momentum around the particle's path
+\begin{equation}
+J_i = \oint (\vec{p} + q \vec{A}) \cdot d\vec{l}
+\end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit that results in $J_1 \sim v_\perp^2 / B$. $J_1$ is conserved as long as a driving force on the particle has a frequency much less than $\Omega$.
+
+The second highest frequency periodic motion is the bounce motion that is due to a gradient in $\vec{B}$ that is parallel to $\vec{B}$. This motion naturally arises in the magnetosphere because the Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. This motion can be visualized \textcolor{red}{Include plots from 1997 Tsurutani SOME BASIC CONCEPTS INTERACTIONS OF WAVE PARTICLE IN COLLISIONLESS PLASMAS}
+
+%This can be visualized as the particle exhibits helical motion around a magnetic field with some parallel velocity $\v_{||}$.
+
+\textcolor{red}{In the presence of an electric field, $\vec{E}$, the particle will gyrate about its gyro center and the gyrocenter will drift due to the $\vec{E} \times \vec{B}$ drift.}
 
 \section{Particle Populations and Their Interractions in the Magnetosphere}\label{ntro:particle_populations}
 
