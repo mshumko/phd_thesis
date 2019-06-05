@@ -22,13 +22,26 @@ r = \frac{m v_\perp}{|q| B}
 J_i = \oint (\vec{p} + q \vec{A}) \cdot d\vec{l}
 \end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit.  With suitable integration, $J_1 \sim v_\perp^2 / B$ that is conserved as long as a driving force on the particle has a frequency much less than $\Omega$.
 
-The second highest frequency periodic motion is the bounce motion that is due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because the Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. First we need to define the concept of pitch angle $\alpha$ as the angle between the magnetic field and particle's velocity vectors. This is schematically shown in Fig. \ref{Intro:pa}a. The pitch angle relates $v$, $v_\perp$, and $v_{||}$ (the component of the particles velocity parallel to $\vec{B}$). As shown in \ref{Intro:pa}b and c, a larger $\alpha$ will tighten the particle's helix trajectory and vice versa.
+The second highest frequency periodic motion is the bounce motion that is due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because the Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. First we need to define the concept of pitch angle $\alpha$ as the angle between the magnetic field and particle's velocity vectors. This is schematically shown in Fig. \ref{Intro:pa}a. The pitch angle relates $v$ with $v_\perp$, and $v_{||}$ (the component of the particles velocity parallel to $\vec{B}$). As shown in \ref{Intro:pa}b and c, a larger $\alpha$ will tighten the particle's helix trajectory and vice versa.
 
-Assuming that the particle's kinetic energy is concerned, the conservation of $J_1$ implies that if we measure a particle's $v_\perp(i)$ and $B(i)$ at some initial position, we can calculate its $v_\perp(s)$ along the particle's path if we know $B(s)$ there
+Assuming that the particle's kinetic energy is concerned, the conservation of $J_1$ implies that given a particle's $v_\perp(0)$ and $B(0)$ at the magnetic equator, we can calculate its $v_\perp(s)$ along the particle's path with $B(s)$ from magnetic field models. The perpendicular velocity is related via
+\begin{equation}
+\frac{v_\perp^2 (0)}{B(0)} = \frac{v_\perp^2 (s)}{B(s)}
+\end{equation} which can be rewritten as 
 
 \begin{equation}
-\frac{v_\perp^2 (i)}{B(i)} = \frac{v_\perp^2 (s)}{B(s)}
-\end{equation} 
+\frac{v^2 \sin^2{\alpha(0)}}{B(0)} = \frac{v^2 - v^2_{||}(s)}{B(s)}
+\end{equation} and re-arranged to solve for $v_{||}(s)$
+
+\begin{equation}
+v_{||}(s) = v \sqrt{1 - \frac{B(s)}{B(0)} \sin^2{\alpha(0)}}
+\end{equation} which will tend towards 0 since $B(s) > B(0)$ in a dipole magnetic field.
+
+The location where $v_{||} = 0$ is called the mirror point where a particle stops and reverses direction. Since Earth's magnetic field is stronger towards the poles, the particle will execute periodic bounce motion between the two mirror points. The corresponding adiabatic invariant, $J_2$ is
+
+\begin{equation}
+J_2 = \oint p_{||} ds
+\end{equation} where $ds$ describes the particle trajectory between the mirror points in the northern and southern hemispheres.
 
 \begin{figure}
 \includegraphics[scale=1]{pitch_angle_and_helix.png}
