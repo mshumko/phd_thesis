@@ -7,14 +7,14 @@ The goal of this dissertation is to study the wave-particle mechanism that scatt
 
 \section{Charged Particle Motion in Electric and Magnetic Fields}\label{Intro:particle_motion}
 A charged particle trapped in the magnetosphere will experience three types of periodic motion in Earth's nearly dipolar field. The three motions are ultimately due to the Lorentz force that a particle of momentum $\vec{p}$, charge $q$, and velocity $\vec{v}$ experiences in an electric field $\vec{E}$ and magnetic field $\vec{B}$ and is given by
-\begin{equation}
+\begin{equation} \label{Intro:Lorentz}
 \frac{d\vec{p}}{dt} = q(\vec{E} + \vec{v} \times \vec{B}).
 \end{equation} In the magnetosphere, the three periodic motions in decreasing frequency are gyration, bounce, and drift and are schematically shown in Fig. \ref{Intro:motion_diagram}. Each of periodic these motions have a corresponding conserved quantity i.e. an adiabatic invariant. 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_three_motions.png}
-\caption{A diagram of the three motions that a charged particle experiences in Earth's dipole magnetic field. These motions are: gyration about the magnetic field line, bounce motion between the magnetic poles, and azimuthal drift around the Earth. Figure from \citep{Baumjohann1997}}
-\label{Intro:motion_diagram}.
+\caption{A diagram of the three motions that a charged particle experiences in Earth's dipole magnetic field. These motions are: gyration about the magnetic field line, bounce motion between the magnetic poles, and azimuthal drift around the Earth. Figure from \citep{Baumjohann1997}.}
+\label{Intro:motion_diagram}
 \end{figure}
 
 
@@ -48,7 +48,7 @@ The location where $v_{||} = 0$ is called the mirror point where a particle stop
 
 \begin{equation} \label{Intro:j2}
 J_2 = \oint p_{||} ds
-\end{equation} where $ds$ describes the particle path between the mirror points in the northern and southern hemispheres. Substituting Eq. \ref{Intro:eq_vp} into Eq. \ref{Intro:j2} and using the fact that at the mirror point the magnetic field strength is $B_m$ and $\alpha(m) = 90$, $J_2$ can be written as     
+\end{equation} where $ds$ describes the particle path between the mirror points in the northern and southern hemispheres (see Fig. \ref{Intro:motion_diagram}). Substituting Eq. \ref{Intro:eq_vp} into Eq. \ref{Intro:j2} and using the fact that at the mirror point the magnetic field strength is $B_m$ and $\alpha(m) = 90$, $J_2$ can be written as     
 \begin{equation}
 J_2 = 2 p \int_{S \ mirror}^{N \ mirror} \sqrt{1 - \frac{B(s)}{B(m)}} ds
 \end{equation} where $N \ mirror$ and $S \ mirror$ are the northern and southern mirror points, respectively. The bounce period can be estimated \citep[e.g.][]{Baumjohann1997} to be 
@@ -57,14 +57,21 @@ J_2 = 2 p \int_{S \ mirror}^{N \ mirror} \sqrt{1 - \frac{B(s)}{B(m)}} ds
 t_b \approx \frac{L R_e}{\sqrt{W/m}} (3.7 - 1.6 \sin{\alpha_0})
 \end{equation} where $L$ is the $L$-shell which describes the distance from the Earth's center to where a particular magnetic field line crosses the magnetic equator, in units of Earth radii, $R_e$. $W$ is the particle's kinetic energy, and $\alpha_0$ is the equatorial pitch angle.
 
+At this stage it is instructional to introduce the notion of the loss cone angle, $\alpha_L$. $\alpha_L$ is defined such that if a charged particle has a $\alpha < \alpha_L$ it will mirror at or below $\approx 100$ km altitude in the atmosphere. A particle at those altitudes will encounter Earth's atmosphere and has a significant probability of Coulomb scattering with atmospheric particles and be removed from the magnetosphere.
+
 \begin{figure}
 \includegraphics[scale=1]{1_pitch_angle_and_helix.png}
 \caption{Charged particle motion in a uniform magnetic field $\vec{B}$. Panel (A) shows the geometry defining the pitch angle, $\alpha$. Panel (B) and (C) show two helical electron trajectories assuming a large and small $\alpha$ (corresponding to a small and large parallel velocity $v_{||}$), respectively.}
 \label{Intro:pa}
 \end{figure}
 
-\textcolor{red}{In the presence of an electric field, $\vec{E}$, the particle will gyrate about its gyro center and the gyrocenter will drift due to the $\vec{E} \times \vec{B}$ drift.}
+The slowest periodic motion experienced by charged particles in Earth's magnetic field is azimuthal drift around the Earth. This drift results from a combination of a radial gradient in $\vec{B}$ and the curvature of the magnetic field. The radial gradient drift can be easily justified because Earth's magnetic field is stronger near the Earth where the particle's gyroradius radius of curvature will be smaller as it gyrates towards the Earth, and larger when it gyrates outward. The overall effect is the particle gyro orbit does not close on itself and negatively charged particles drift East and negatively charged particles drift West. The drift due to the centrifugal force that a particle experiences as it bounces on curved field lines also increases the drift rate. The drift adiabatic invariant is found by integrating the $J$ over the entire particle's orbit (drift shell) around the Earth. The first term is negligible, and the second term is the magnetic flux enclosed by the drift shell, $\Phi_m$  i.e. $J_3 \sim \Phi_m$. 
 
+Up until now the three drift motions conserve energy due to the absence of  electric fields, $\vec{E}$. If $\vec{E}$ is present, a particle's center of gyration (found by averaging over the gyro orbit) will drift in a direction perpendicular to both $\vec{E}$ and $\vec{B}$. The drift velocity can be solved directly from Eq. \ref{Intro:Lorentz} and is
+\begin{equation}
+\vec{v}_E = \frac{\vec{E} \times \vec{B}}{B^2}.
+\end{equation} Lastly, detailed derivations of these motions can be found in \citep{Baumjohann1997, Schulz1974, Tsurutani1997}.
+        
 \section{Particle Populations and Their Interractions in the Magnetosphere}\label{ntro:particle_populations}
 
 \section{Radiation Belts}\label{Intro:radiation_belt}
@@ -92,23 +99,3 @@ by the planet’s magnetic field
 
 \section{Scope of Reserach}\label{Intro:scope}
 This dissertation furthers our understanding of the microburst scattering mechanism and is organized into the following chapters. Chapter \textcolor{red}{X} will describe the spacecraft missions used to study microburst precipitation and wave-particle scattering. Then Ch. \textcolor{red}{Y} will describe a microburst scattering event observed by NASA's Van Allen Probes and the quasi-linear diffusion model that was developed. Next, Ch. \textcolor{red}{Z} will describe a bouncing packet microburst observation made by MSU's FIREBIRD-II mission where the microburst's lower bound longitudinal and latitudinal scale sizes were estimated. Chapter \textcolor{red}{ZZ} then expands the case study result from Ch. \textcolor{red}{Z} to a statistical study of microburst sizes and the microburst size models developed to interpret the data. Lastly, \textcolor{red}{ZZZ} will summarize the dissertation work and make concluding remarks about research to be done.
-
-\iffalse %%%%%%%%%%%%%%%%%%%%% TEMPLATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Welcome to the Montana State University electronic Thesis/Dissertation (ETD) \LaTeX{} template.  In this chapter various sections, subsections, and subsubsections are created and filled with random text).  In Ch.~\ref{CH:theory} methods to write equations and how to include figures and tables are explored. Conclusions are drawn in Ch.~\ref{conclusion}.
-
-
-\section{Section}\label{Sect:test}
-\lipsum[1] % Random text
-
-\subsection{Subsection}\label{Sect:testsub}
-\lipsum[2] % Random text
-
-\subsubsection{Subsubsection}\label{Sect:testsubsub}
-\lipsum[3] % Random text
-
-\longsubsection{Subsection With a Very Very Very Very}{Very Very Very Very Very Very Long Title}\label{Sect:longsub}
-For long subsection titles use the command \verb|\longsubsection{#1}{#2}|, where \#1 is the first line of the long title, and \#2 is the second line of the long title. You can also pass an optional argument to this command that puts a shorter title in the table of contents as shown by the subsection below.
-
-\longsubsection[Subsection With a Very Long Title]{Subsection With a Very Long Title}{But Shortened in the Table Of Contents}\label{Sect:longsub2}
-There are \textbf{not} similar commands for sections and subsubsections as these are not specified in the MSU style guide.  
-\fi
