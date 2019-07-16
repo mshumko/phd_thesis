@@ -25,7 +25,7 @@ r = \frac{m v_\perp}{|q| B}
 \begin{equation}
 \Omega = \frac{|q| B}{m}
 \end{equation} in units of radians/second. Inside the radiation belts the electron gyrofrequency, $\Omega_e$ is on the order of a kHz. The corresponding adiabatic invariant is found by integrating the particle's canonical momentum around the particle's path of gyration
-\begin{equation}
+\begin{equation} \label{J}
 J_i = \oint (\vec{p} + q \vec{A}) \cdot d\vec{l}
 \end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit.  With suitable integration, $J_1 \sim v_\perp^2 / B$ and is conserved as the frequency of the driving force, $\omega$ satisfies $\omega << \Omega_e$.
 
@@ -42,30 +42,30 @@ Assuming the particle's kinetic energy is concerned, the conservation of $J_1$ i
 
 \begin{equation} \label{Intro:eq_vp} 
 v_{||}(s) = v \sqrt{1 - \frac{B(s)}{B(0)} \sin^2{\alpha(0)}}
-\end{equation} which will tend towards 0 since $B(s) > B(0)$ in a dipole magnetic field.
+\end{equation} which will tend towards 0 when the second term in the radical approaches 1.
 
-The location where $v_{||} = 0$ is called the mirror point where a particle stops and reverses direction. Since Earth's magnetic field is stronger towards the poles, the particle will execute periodic bounce motion between the two mirror points. The corresponding adiabatic invariant, $J_2$ is
+The location where $v_{||}(s) = 0$ is called the mirror point and is where a particle stops and reverses direction. Since Earth's magnetic field is stronger towards the poles, the mirroring particle will execute periodic bounce motion between its two mirror points in the northern and southern hemispheres. The corresponding adiabatic invariant, $J_2$ is
 
 \begin{equation} \label{Intro:j2}
 J_2 = \oint p_{||} ds
-\end{equation} where $ds$ describes the particle path between the mirror points in the northern and southern hemispheres (see Fig. \ref{Intro:motion_diagram}). Substituting Eq. \ref{Intro:eq_vp} into Eq. \ref{Intro:j2} and using the fact that at the mirror point the magnetic field strength is $B_m$ and $\alpha(m) = 90$, $J_2$ can be written as     
+\end{equation} where $ds$ describes the particle path between the mirror points in the northern and southern hemispheres (see Fig. \ref{Intro:motion_diagram}). $J_2$ is found by substituting Eq. \ref{Intro:eq_vp} into Eq. \ref{Intro:j2} and defining the magnetic field strength at the mirror points as $B_m$ where $\alpha(m) = 90^\circ$. The $J_2$ integral can be written as     
 \begin{equation}
-J_2 = 2 p \int_{S \ mirror}^{N \ mirror} \sqrt{1 - \frac{B(s)}{B(m)}} ds
-\end{equation} where $N \ mirror$ and $S \ mirror$ are the northern and southern mirror points, respectively. The bounce period can be estimated \citep[e.g.][]{Baumjohann1997} to be 
+J_2 = 2 p \int_{m_n}^{m_s} \sqrt{1 - \frac{B(s)}{B(m)}} ds
+\end{equation} where $m_n$ and $m_s$ are the northern and southern mirror points, respectively. The bounce period can be estimated \citep[e.g.][]{Baumjohann1997} to be 
 
 \begin{equation}
-t_b \approx \frac{L R_e}{\sqrt{W/m}} (3.7 - 1.6 \sin{\alpha_0})
-\end{equation} where $L$ is the $L$-shell which describes the distance from the Earth's center to where a particular magnetic field line crosses the magnetic equator, in units of Earth radii, $R_e$. $W$ is the particle's kinetic energy, and $\alpha_0$ is the equatorial pitch angle.
+t_b \approx \frac{L R_e}{\sqrt{W/m}} (3.7 - 1.6 \sin{\alpha(0)})
+\end{equation} where $L$ is the $L$-shell which describes the distance from the Earth's center to the location where a particular magnetic field line crosses the magnetic equator, in units of Earth radii, $R_e$. $W$ is the particle's kinetic energy. As with gyration, a particle bounces as long as $\omega << \Omega_b$, where $\Omega_b$ is the bounce frequency.
 
-At this stage it is instructional to introduce the notion of the loss cone angle, $\alpha_L$. $\alpha_L$ is defined such that if a charged particle has a $\alpha < \alpha_L$ it will mirror at or below $\approx 100$ km altitude in the atmosphere. A particle at those altitudes will encounter Earth's atmosphere and has a significant probability of Coulomb scattering with atmospheric particles and be removed from the magnetosphere.
+At this stage it is instructional to introduce the notion of the loss cone pitch angle, $\alpha_L$.  A particle with $\alpha \leq \alpha_L$ will mirror at or below $\approx 100$ km altitude in the atmosphere. A particle at those altitudes will encounter Earth's atmosphere and has a significant probability of Coulomb scattering with atmospheric particles and be lost to the atmosphere.
 
 \begin{figure}
 \includegraphics[scale=1]{1_pitch_angle_and_helix.png}
-\caption{Charged particle motion in a uniform magnetic field $\vec{B}$. Panel (A) shows the geometry defining the pitch angle, $\alpha$. Panel (B) and (C) show two helical electron trajectories assuming a large and small $\alpha$ (corresponding to a small and large parallel velocity $v_{||}$), respectively.}
+\caption{Charged particle motion in a uniform magnetic field $\vec{B}$. Panel (A) shows the geometry defining the pitch angle, $\alpha$. Panel (B) and (C) show two helical electron trajectories with dashed lines assuming a large and small $\alpha$ (corresponding to a small and large parallel velocity $v_{||}$), respectively.}
 \label{Intro:pa}
 \end{figure}
 
-The slowest periodic motion experienced by charged particles in Earth's magnetic field is azimuthal drift around the Earth. This drift results from a combination of a radial gradient in $\vec{B}$ and the curvature of the magnetic field. The radial gradient drift can be easily justified because Earth's magnetic field is stronger near the Earth where the particle's gyroradius radius of curvature will be smaller as it gyrates towards the Earth, and larger when it gyrates outward. The overall effect is the particle gyro orbit does not close on itself and negatively charged particles drift East and negatively charged particles drift West. The drift due to the centrifugal force that a particle experiences as it bounces on curved field lines also increases the drift rate. The drift adiabatic invariant is found by integrating the $J$ over the entire particle's orbit (drift shell) around the Earth. The first term is negligible, and the second term is the magnetic flux enclosed by the drift shell, $\Phi_m$  i.e. $J_3 \sim \Phi_m$. 
+The slowest periodic motion experienced by charged particles in Earth's magnetic field is azimuthal drift around the Earth. This drift results from a combination of a radial gradient in $\vec{B}$ and the curvature of the magnetic field. The radial gradient drift arises because Earth's magnetic field is stronger near the Earth where the particle's gyroradius radius of curvature is smaller as it gyrates towards stronger magnetic field, and larger when it gyrates outward. The overall effect is the particle gyro orbit does not close on itself and negatively charged particles drift East and positively charged particles drift West. The radial gradient drift is enhanced by the centrifugal force that a particle experiences as it bounces along the curved field lines. The drift adiabatic invariant, $J_3$ is found by integrating Eq. \ref{J} over the complete particle orbit around the Earth. The shape of this drift orbit is otherwise known as a drift shell. For $J_3$, the first term is negligible and the second term is the magnetic flux enclosed by the drift shell, $\Phi_m$  i.e. $J_3 \sim \Phi_m$. 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_schulz_lanzerotti_fig6.png}
@@ -73,10 +73,10 @@ The slowest periodic motion experienced by charged particles in Earth's magnetic
 \label{Intro:adiabatic_frequencies}
 \end{figure}
 
-Up until now the three drift motions conserve energy due to the absence of  electric fields, $\vec{E}$. If $\vec{E}$ is present, a particle's center of gyration (found by averaging over the gyro orbit) will drift in a direction perpendicular to both $\vec{E}$ and $\vec{B}$. The drift velocity can be solved directly from Eq. \ref{Intro:Lorentz} and is
+Up until now we have considered the three periodic motions due Earth's magnetic field and the absence of electric fields. If $\vec{E}$ is present, a particle's center of gyration i.e., averaged position of the particle over a gyration, will drift with a velocity perpendicular to both $\vec{E}$ and $\vec{B}$. The drift velocity can be solved directly from Eq. \ref{Intro:Lorentz} and is
 \begin{equation}
 \vec{v}_E = \frac{\vec{E} \times \vec{B}}{B^2}.
-\end{equation} Lastly, detailed derivations of these motions can be found in \citep{Baumjohann1997, Schulz1974, Tsurutani1997}.
+\end{equation} Lastly, for more detailed derivations of these motions, see the following texts: \citet{Baumjohann1997, Schulz1974, Tsurutani1997}.
         
 \section{Particle Populations and Their Interractions in the Magnetosphere}\label{ntro:particle_populations}
 The single-particle motion described in the previous section was a prerequisite to understanding how these particles organize into macroscopic structures in the magnetosphere. The structure of the outer magnetosphere is shown in Fig. \ref{Intro:outer_magnetosphere} and inner magnetosphere in Fig. \ref{Intro:inner_magnetosphere}. In this section we will discuss the macroscopic magnetosphere structures and how they couple.
