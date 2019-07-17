@@ -124,16 +124,16 @@ The outer boundary of the plasmasphere is the plasmapause which is typically ide
 \subsubsection{Ring Current}
 The next higher energy population is the ring current. This population consists of protons and electrons between tens and a few hundred keV that drift around the Earth. The orbits of higher energy particles are not as effected by the convection and co-rotation electric field, rather they drift around the Earth due to gradient and curvature drifts. Since the direction of the drift is dependent on charge, protons drift west around the Earth and electrons drift East. This has the effect of creating a current around the Earth. 
 
-The ring current generates a magnetic field which decreases the magnetic field strength on Earth's surface and increases it outside of the ring current. The decrease of Earth's magnetic field strength is readily observed by a system of ground-based magnetometers and is merged into a Disturbance Storm Time (DST) index. An example of a DST index time series from a coronal mass ejection (CME) driven 2015 St. Patrick's Day storm is shown in Fig. \ref{Intro:dst}. The ring current is sometimes first depleted and DST increases slightly (initial phase or sudden storm commencement). Then the ring current is rapidly built up during which DST rapidly decreases (main phase). Lastly the ring current gradually decays toward its equilibrium state over a period of a few days and DST increases towards 0 (recovery phase). The DST index along with other indicies are readily used by the space physics community to loosely quantify the global state of the magnetosphere.
+The ring current generates a magnetic field which decreases the magnetic field strength on Earth's surface and increases it outside of the ring current. The decrease of Earth's magnetic field strength is readily observed by a system of ground-based magnetometers and is merged into a Disturbance Storm Time (DST) index. An example of a DST index time series from a coronal mass ejection (CME) driven 2015 St. Patrick's Day storm is shown in Fig. \ref{Intro:dst}. The ring current is sometimes first depleted and DST increases slightly (initial phase or sudden storm commencement). Then the ring current is rapidly built up during which DST rapidly decreases (main phase). Lastly the ring current gradually decays toward its equilibrium state over a period of a few days and DST increases towards 0 (recovery phase). The DST index along with other indicies are readily used by the space physics community to quantify the global state of the magnetosphere.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{1_dst.png}
-\caption{The DST index during the St. Patrick's Day 2015 storm. This storm was caused by a coronal mass ejection on March 15th, 2015. The storm phases are: initial phase, main phase, and recovery phase. The initial phase occurred when the Dst peaked at +50 nT on March 17th during which the ring current was eroded by the coronal mass ejection. The rapid decrease to $\approx -200$ nT was during the main phase where many injections from the magnetotail pumped up the ring current which reduced Earth's magnetic field strength at the ground. Lastly, the recovery phase lasted from March 18th to approximately March 25th during which the ring current particles were lost and the magnetosphere returned to its equilibrium state.}
+\includegraphics[width=\textwidth]{1_dst.pdf}
+\caption{The DST index during the St. Patrick's Day 2015 storm. This storm was caused by a coronal mass ejection on March 15th, 2015. The storm phases are: initial phase, main phase, and recovery phase. The initial phase occurred when the Dst peaked at +50 nT on March 17th during which the ring current was eroded by the coronal mass ejection during the interval shown by the red bar. Then the rapid decrease to $\approx -200$ nT was during the main phase where many injections from the magnetotail pumped up the ring current which reduced Earth's magnetic field strength at the ground and is shown with the green bar. Lastly, the recovery phase lasted from March 18th to approximately March 29th during which the ring current particles were lost and the ring current returned to its equilibrium state. The recovery phase is shown with the blue bar.}
 \label{Intro:dst}
 \end{figure}
 
 \subsubsection{Radiation Belts}\label{Intro:radiation_belt}
-The highest energy particle populations are in the Van Allen radiation belts. These belts were discovered by \citet{Allen1959} and \citet{Vernov1960} during the Cold War and are a pair of toroidally shaped populations of trapped particles bellow $L \approx 8$ and are shown in Fig. \ref{Intro:rad_belts}. Their toroidal shape is a result of Earth's dipole magnetic field and the conservation of the three adiabatic invariants discussed in section \ref{Intro:particle_motion}.
+The highest energy particle populations are in the Van Allen radiation belts. These belts were discovered by \citet{Allen1959} and \citet{Vernov1960} during the Cold War and are a pair of toroidally shaped populations of trapped electrons and protons usually within to $L < 8$ and are shown in Fig. \ref{Intro:rad_belts}. Their quiescent toroidal shape is similar to the shape of the plasmasphere and ring current and is a result of Earth's dipole magnetic field and the conservation of the three adiabatic invariants discussed in section \ref{Intro:particle_motion}.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_rad_belt.png}
@@ -147,56 +147,56 @@ The highest energy particle populations are in the Van Allen radiation belts. Th
 \label{Intro:reeves_l_cut}
 \end{figure}
 
-The inner radiation belt is very stable on time periods of years, extends to $L \approx 2$, and mainly consists of protons with energies between MeV and GeV and electrons with energies up to $\approx 1$ MeV \citep{Claudepierre2019}. The source of inner radiation belt protons is believed to be due to cosmic-ray albedo neutron decay \citep[e.g.][]{Li2017_CRAND} \textcolor{red}{Explain CRAND?} and inward radial diffusion for electrons \citep[e.g.][]{O'Brien2016_inner}. The gap between the inner and outer radiation belt is called the slot, which is believed to be due to hiss waves inside the plasmasphere (described below) scattering electrons into the atmosphere \citep[e.g.][]{Lyons1973, Breneman2015}.
+The inner radiation belt is extremely stable on time periods of years, extends to $L \approx 2$, and mainly consists of protons with energies between MeV and GeV and electrons with energies up to $\approx 1$ MeV \citep{Claudepierre2019}. The source of inner radiation belt protons is believed to be due to cosmic-ray albedo neutron decay \citep[e.g.][]{Li2017_CRAND} and inward radial diffusion for electrons \citep[e.g.][]{O'Brien2016_inner}. The gap between the inner and outer radiation belt is called the slot, which is believed to be due to hiss waves inside the plasmasphere (described below) scattering particles into the atmosphere \citep[e.g.][]{Lyons1973, Breneman2015}.
 
-The outer radiation belt, on the other hand is much more dynamic and consists of mainly electrons of energies up to a few MeV. The outer belt's spatial extent is highly variable e.g. Fig. \ref{Intro:reeves_l_cut}, and is typically observed at $4 < L < 8$. Since the outer radiation belt houses a dynamic population of energetic particles that pose a threat to humans and technology, decades of research has been undertaken to understand and predict the outer radiation belt particles and waves. The dynamics of the outer radiation belt can be split up into various competing acceleration and loss mechanisms which will be described in the following sections.
+The outer radiation belt, on the other hand is much more dynamic and consists of mainly electrons of energies up to a few MeV. The outer belt's spatial extent is highly variable e.g. see Fig. \ref{Intro:reeves_l_cut}, and is typically observed at $4 < L < 8$. Since the outer radiation belt contains a dynamic population of energetic particles that pose a threat to human and technological presence in Earth's atmosphere and space, decades of research has been undertaken to understand and predict the outer radiation belt particles, waves, and wave-particle interactions. The dynamics of the outer radiation belt can be understood by considering various competing acceleration and loss mechanisms which will be described in the following sections.
 
 \section{Radiation Belt Particle Sources and Sinks}\label{Intro:sources_sinks}
 
 \subsection{Adiabatic Heating}\label{Intro:adiabatic_heating}
-One of the particle heating mechanisms arises from the Earthward convection of particles. The conservation of $J_1$ implies that the initial and final $v_\perp$ depends on the change in the magnetic field amplitude
+One of the particle heating and transport mechanisms arises from the Earthward convection of particles. The conservation of $J_1$ implies that the initial and final $v_\perp$ depends on the change in the magnetic field amplitude
 
 \begin{equation}
-\frac{v^2_{\perp \ i}}{B_i} = \frac{v^2_{\perp \ f}}{B_f}
-\end{equation} and as a particle convents Earthward, $B_f > B_i$ so $v_\perp$ must increase. The dipole magnetic field amplitude is 
+\frac{v^2_{\perp \ i}}{B_i} = \frac{v^2_{\perp \ f}}{B_f}.
+\end{equation} As a particle convents Earthward, $B_f > B_i$ thus $v_\perp$ must increase. The dipole magnetic field amplitude can be written as
 
 \begin{equation}
 B(L, \theta) = \frac{31.2 \ \mathrm{\mu T}}{L^3}\sqrt{1 + 3 \cos^2 \theta}
 \end{equation} which implies that 
 
 \begin{equation}
-\frac{v_{\perp \ f}^2}{v_{\perp \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^3
+\frac{v_{\perp \ f}^2}{v_{\perp \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^3.
 \end{equation}.
 
-Furthermore as the particle convects Earthward the mirror points on field lines start to converge. If $J_2$ is conserved, the decrease in the bounce path implies that $v_{||}$ must increase by 
+In addition, as the particle convects Earthward the distance between the particle's mirror points decrease. If $J_2$ is conserved, the shrinking bounce path implies that $v_{||}$ must increase by 
 
 \begin{equation}
 \frac{v_{|| \ f}^2}{v_{|| \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^k
-\end{equation} where $k$ ranges from $2$ for equatorial pitch angles, $\alpha_{eq} = 0^\circ$ to $2.5$ for $\alpha_{eq} = 90^\circ$ \citep{Baumjohann1997}. Since the rates of $v_\perp$ adiabatic heating is greater than the $v_{||}$ heating, an isotropic particle distribution will become anisotropic during its convection. These isotropic particles can then become unstable to wave growth and generate waves to reach equilibrium.
+\end{equation} where $k$ ranges from $2$ for equatorial pitch angles, $\alpha_{eq} = 0^\circ$, to $2.5$ for $\alpha_{eq} = 90^\circ$ \citep{Baumjohann1997}. Since the rate of adiabatic heating is greater in the perpendicular direction than heating in the parallel direction, an initially isotropic particle distribution will become anisotropic during its convection. These isotropic particles can then become unstable to wave growth and generate waves in order to reach equilibrium.
 
 
 \subsection{Wave Resonance Heating}\label{Intro:wave_heating}
-A few of the electromagnetic wave modes responsible for particle acceleration (and deceleration) are whistler mode chorus (chorus) and electromagnetic ion cyclotron (EMIC) waves. These waves are created by the loss cone instability that driven by an anisotropy of electrons for chorus waves, and protons for EMIC waves. The level of anisotropy can be quantified by the ratio of the perpendicular, $T_\perp$ to parallel, $T_{||}$ particle temperatures such that the particle distribution is unstable when $T_\perp/T_{||} > 1$ which facilitates wave growth. Since the electrons are right-hand circularly polarized, the chorus waves also tend to be right hand circularly polarized \citep{Tsurutani1997}. The same argument applies to protons and EMIC waves as well. 
+Another mechanism that heats particles is due to particles resonating with plasma waves. A few of the electromagnetic wave modes responsible for particle acceleration (and deceleration) relevant to radiation belt dynamics are hiss, whistler mode chorus (chorus), and electromagnetic ion cyclotron (EMIC) waves. These waves are created by the loss cone instability that driven by an anisotropy of electrons for chorus waves, and protons for EMIC waves. The level of anisotropy can be quantified by the ratio of the perpendicular to parallel particle temperatures $(T_\perp/T_{||})$. A particle distribution is unstable when $T_\perp/T_{||} > 1$ which facilitates wave growth. Since electrons gyrate in a right-handed sense, the chorus waves also tend to be right hand circularly polarized \citep{Tsurutani1997}. The same argument applies to protons and left hand circularly polarized EMIC waves as well. 
 
-These circularly polarized waves can resonate with electrons and/or protons since they are gyrating around the field line. One example of this is the cyclotron resonance pictorially shown in Fig. \ref{Intro:resonance}. An electron's $v_{||}$ and the parallel wave vector $k_{||}$ are in opposite directions such that the wave frequency $\omega$ is Doppler shifted to an integer multiple of the $\Omega_e$ at which point the electron feels a static electric field and is accelerated (decelerated). This happens when a resonance condition is satisfied which we will now derive in the simplest case.
+These circularly polarized waves can resonate with electrons and/or protons when their combined motion results in a static $\vec{E}$. One example of a resonance between a right hand circularly polarized wave and an electron is shown in Fig. \ref{Intro:resonance} and is termed the cyclotron resonance. An electron's $v_{||}$ and the wave's parallel wave vector, $k_{||}$ are in opposite directions such that the wave frequency $\omega$ is Doppler shifted to an integer multiple of the $\Omega_e$ at which point the electron feels a static electric field and is accelerated or decelerated. This acceleration happens when a resonance condition is satisfied between a wave and a particle for which we will now derive an illustrative toy model.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_resonance.png}
-\caption{The trajectories of an electron and a right-hand circularly polarized wave when a cyclotron resonance can occur. The electron's $v_{||}$ and the wave's $k_{||}$ are in opposite directions such that the wave's frequency is Doppler shifted to a integer multiple of the electron cyclotron frequency. Figure from \citep{Tsurutani1997}.}
+\caption{The trajectories of an electron and a right-hand circularly polarized wave during a cyclotron resonance. The electron's $v_{||}$ and the wave's $k_{||}$ are in opposite directions such that the wave's frequency is Doppler shifted to a integer multiple of the electron cyclotron frequency. Figure from \citep{Tsurutani1997}.}
 \label{Intro:resonance}
 \end{figure}
 
-Assume a uniform magnetic field $\vec{B} = B_0 \hat{z}$ with a parallel propagating ($k = k\hat{z}$), right-hand circularly polarized wave
+Assume a uniform magnetic field $\vec{B} = B_0 \hat{z}$ with a parallel propagating ($k = k\hat{z}$), right-hand circularly polarized wave. The wave's electric field as a function of position and time can be written as
 
 \begin{equation}
-\vec{E} = E_0 (\cos{\omega t - kz}\hat{x} + \sin{\omega t - kz}\hat{y}) 
-\end{equation} which can be used to take the dot product to find its angular component
+\vec{E} = E_0 (\cos{(\omega t - kz)}\hat{x} + \sin{(\omega t - kz)}\hat{y}) 
+\end{equation} which is more clearly expressed by taking the dot product to find $\vec{E}$ in the $\hat{\theta}$ direction
 \begin{equation}
-E_\theta = \vec{E} \times \hat{\theta} = E_0 \cos{\omega t - kz + \theta}
-\end{equation} where $\theta$ is the particle phase. Now assume the electron is traveling in the $-\hat{z}$ direction with a velocity $\vec{v} = -v_0 \hat{z}$ and its time dependent position along $\hat{z}$ is
+E_\theta = \vec{E} \times \hat{\theta} = E_0 \cos{(\omega t - kz + \theta)}.
+\end{equation} Now assume that the electron is traveling in the $-\hat{z}$ direction with a velocity $\vec{v} = -v_0 \hat{z}$ so its time dependent position along $\hat{z}$ is
 
 \begin{equation}
-z(t) = v_0 t
+z(t) = -v_0 t
 \end{equation} and gyrophase is
 
 \begin{equation}
@@ -204,12 +204,16 @@ z(t) = v_0 t
 \end{equation} where the first negative sign comes from the electron's negative charge. Now we put this all together and express the electric field and the force that the electron will experience
 
 \begin{equation}
-m \frac{dv_\theta}{dt} = qE_\theta = qE_0 \sin{((\omega + kv_0 - \Omega)t - \theta(0))}.
+m \frac{dv_\theta}{dt} = qE_\theta = qE_0 \sin{((\omega + kv_0 - \Omega)t + \theta(0))}.
 \end{equation} This is a relatively complex expression, but when the time dependent component, 
 
 \begin{equation} \label{Intro:resonance}
 \omega + kv_0 - \Omega = 0,
-\end{equation} the electron will be in a static electric field which will accelerate or decelerate the electron depending on $\theta_0$, the phase between the wave and the electron. \textcolor{red}{Show Bortnik 2008 plot?} The expression in Eq. \ref{Intro:resonance} is commonly referred to as the resonance condition. A few wave modes that a particle experiences along its drift orbit and are relevant to particle scattering studied here are shown in Fig. \ref{Intro:waves}. \textcolor{red}{Cite Forrest Mozer's work?}
+\end{equation} the electron will be in a static electric field which will accelerate or decelerate the electron depending on $\theta_0$, the phase between the wave and the electron. \textcolor{red}{Show Bortnik 2008 plot?} The expression in Eq. \ref{Intro:resonance} is commonly referred to as the resonance condition and is more generally written as 
+
+\begin{equation}
+\omega - k_{||} v_{||} = \frac{n \Omega_e}{\gamma}
+\end{equation} where $n$ is the resonance order, and $\gamma$ is the relativistic correction \citep[e.g.][]{Millan2007}. It is important to remember that along the particle's orbit it will encounter and experience the effects of all of the waves along its orbit. The typical MLT extent of a handful of waves that are capable of scattering radiation belt electrons are shown in Fig. \ref{Intro:waves}.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_wave_populations.png}
