@@ -22,4 +22,5 @@ read_main:
 	
 clean:
 	find -name "main*" -type f -not -name '*.tex' -not -name '*.pdf' -delete
-	find -name "${filename}*" -type f -not -name '*.tex' -not -name '*.pdf' -delete
+	find -name "*.aux" -delete
+	find -name "*.tex.bak" -delete
