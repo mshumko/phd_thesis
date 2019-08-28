@@ -3,13 +3,15 @@ Above Earth's atmosphere are the a pair of Van Allen radiation belts, a complex 
 
 One natural phenomenon in the radiation belts that has been a topic of interest in the space physics community is wave-particle interactions that, as we will explore throughout this dissertation, can accelerate particles to very high energies (e.g. $\approx \mathrm{MeV}$ for electrons) and scatter them into the atmosphere.
 
-The goal of this dissertation is to study the wave-particle mechanism that scatters microbursts, a sub-second impulse of electrons into Earth's atmosphere. Before we dive deep into the physics of wave-particle interactions, an introduction to Earth's magnetosphere is warranted. Single charged particle motion in Earth's electric and magnetic fields will be described first. Then the major particle populations in the magnetosphere and the coupling between them will be described. Lastly, a brief overview of wave-particle interactions and their effects will be presented.
+The goal of this dissertation is to study the wave-particle scattering mechanism that scatters electron microbursts. Electron microbursts, henceforth referred to as microbursts, are typically observed by low Earth orbiting spacecraft, sounding rockets, and high altitude balloons as a sub-second impulse of electrons. Some of the most intense microbursts are observed as a 10 to 100 fold increase of electrons (for example see Fig. 7 in \citet{Blake1996}). Since they were first reported by \citet{Anderson1964}, the short microburst duration and their impulsive nature have compelled countless researchers to understand their properties and the physical mechanism(s) that create microbursts. Microbursts are widely believed to be created by wave-particle scattering between a plasma wave called whistler mode chorus and outer radiation belt electrons, although many details regarding the scattering mechanism are unconstrained or unknown.
+
+This chapter serves as an introduction to the physics of charged particles, plasma waves, and the wave-particle interactions in Earth's magnetosphere. We will first derive the motion of individual charged particles in Earth's electric and magnetic fields. Then we will cover how various groups of charged particles coalesce to form the major particle populations in the magnetosphere. Then, we will cover the various mechanisms that accelerate particles in the magnetosphere. Lastly, we will review the basics of microbursts as a jumping-off point for the rest of the dissertation. 
 
 \section{Charged Particle Motion in Electric and Magnetic Fields}\label{Intro:particle_motion}
 A charged particle trapped in the magnetosphere will experience three types of periodic motion in Earth's nearly dipolar magnetic field. The three motions are ultimately due to the Lorentz force that a particle of momentum $\vec{p}$, charge $q$, and velocity $\vec{v}$ experiences in an electric field $\vec{E}$ and magnetic field $\vec{B}$ and is given by
 \begin{equation} \label{Intro:Lorentz}
 \frac{d\vec{p}}{dt} = q(\vec{E} + \vec{v} \times \vec{B}).
-\end{equation} In the magnetosphere, the three periodic motions in decreasing frequency are gyration, bounce, and drift and are schematically shown in Fig. \ref{Intro:motion_diagram}. Each of periodic these motions have a corresponding conserved quantity i.e. an adiabatic invariant. 
+\end{equation} In the magnetosphere, the three periodic motions, in decreasing frequency, are gyration, bounce, and drift and are schematically shown in Fig. \ref{Intro:motion_diagram}. Each of periodic these motions have a corresponding conserved quantity i.e. an adiabatic invariant. 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_three_motions.png}
@@ -27,11 +29,11 @@ r = \frac{m v_\perp}{|q| B}
 \end{equation} in units of radians/second. Inside the radiation belts the electron gyrofrequency, $\Omega_e$ is on the order of a kHz. The corresponding adiabatic invariant is found by integrating the particle's canonical momentum around the particle's path of gyration
 \begin{equation} \label{J}
 J_i = \oint (\vec{p} + q \vec{A}) \cdot d\vec{l}
-\end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit.  With suitable integration, $J_1 \sim v_\perp^2 / B$ and is conserved as the frequency of the driving force, $\omega$ satisfies $\omega << \Omega_e$.
+\end{equation} where $J_i$ is the $i^{th}$ adiabatic invariant and $\vec{A}$ is the magnetic vector potential. This integral is carried out by integrating the first term over the circumference of the gyro orbit and integrating the second term using Stokes theorem to calculate the magnetic flux enclosed by the gyro orbit.  The gyration invariant is then $J_1 \sim v_\perp^2 / B$, which is conserved when the frequency, $\omega$ of a force acting on the gyrating electron satisfies $\omega << \Omega_e$.
 
-The second highest frequency periodic motion is bouncing due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. To understand this motion we first we need to define the concept of pitch angle $\alpha$ as the angle between $\vec{B}$ and $\vec{v}$ which is schematically shown in Fig. \ref{Intro:pa}a. The pitch angle relates $v$ with $v_\perp$, and $v_{||}$ (the component of the particles velocity parallel to $\vec{B}$). As shown in \ref{Intro:pa}b and c, a larger $\alpha$ will tighten the particle's helical trajectory and vice versa.
+The second highest frequency periodic motion is bouncing due to a parallel gradient in $\vec{B}$. This periodic motion naturally arises in the magnetosphere because Earth's magnetic field is stronger near the poles, and artificially in the laboratory in magnetic bottle machines. To understand this motion we first we need to define the concept of pitch angle $\alpha$ as the angle between $\vec{B}$ and $\vec{v}$ which is schematically shown in Fig. \ref{Intro:pa}a. The pitch angle relates $v$ with $v_\perp$, and $v_{||}$ (the component of the particles velocity parallel to $\vec{B}$). As shown in \ref{Intro:pa}b and c, a smaller (larger) $\alpha$ will increase (decrease) the distance that the charged particle travels parallel to $\vec{B}$, during one gyration.
 
-Assuming the particle's kinetic energy is concerned, the conservation of $J_1$ implies that given a particle's $v_\perp(0)$ and $B(0)$ at the magnetic equator (where Earth's magnetic field is usually at a minimum), we can calculate its $v_\perp(s)$ along the particle's path $s$ by calculating $B(s)$ from magnetic field models. The particle's perpendicular velocity is then related via
+Assuming the particle's kinetic energy is conserved, the conservation of $J_1$ implies that given a particle's $v_\perp(0)$ and $B(0)$ at the magnetic equator (where Earth's magnetic field is usually at a minimum), we can calculate its $v_\perp(s)$ along the particle's path $s$ by calculating $B(s)$ from magnetic field models. The particle's perpendicular velocity is then related via
 \begin{equation}
 \frac{v_\perp^2 (0)}{B(0)} = \frac{v_\perp^2 (s)}{B(s)}
 \end{equation} which can be rewritten as 
@@ -44,7 +46,7 @@ Assuming the particle's kinetic energy is concerned, the conservation of $J_1$ i
 v_{||}(s) = v \sqrt{1 - \frac{B(s)}{B(0)} \sin^2{\alpha(0)}}
 \end{equation} which will tend towards 0 when the second term in the radical approaches 1.
 
-The location where $v_{||}(s) = 0$ is called the mirror point and is where a particle stops and reverses direction. Since Earth's magnetic field is stronger towards the poles, the mirroring particle will execute periodic bounce motion between its two mirror points in the northern and southern hemispheres. The corresponding adiabatic invariant, $J_2$ is
+The location where $v_{||}(s) = 0$ is called the mirror point and is where a particle reverses direction. Since Earth's magnetic field is stronger towards the poles, the mirroring particle will execute periodic bounce motion between its two mirror points in the northern and southern hemispheres. The corresponding adiabatic invariant, $J_2$ is
 
 \begin{equation} \label{Intro:j2}
 J_2 = \oint p_{||} ds
@@ -55,7 +57,7 @@ J_2 = 2 p \int_{m_n}^{m_s} \sqrt{1 - \frac{B(s)}{B(m)}} ds
 
 \begin{equation}
 t_b \approx \frac{L R_e}{\sqrt{W/m}} (3.7 - 1.6 \sin{\alpha(0)})
-\end{equation} where $L$ is the $L$-shell which describes the distance from the Earth's center to the location where a particular magnetic field line crosses the magnetic equator, in units of Earth radii, $R_e$. $W$ is the particle's kinetic energy. As with gyration, a particle bounces as long as $\omega << \Omega_b$, where $\Omega_b$ is the bounce frequency.
+\end{equation} where $L$ is the $L$-shell which describes the distance from the Earth's center to the location where a particular magnetic field line crosses the magnetic equator, in units of Earth radii, $R_e$. $W$ is the particle's kinetic energy. As with gyration, the particle will bounce between the mirror points as long as $\omega << \Omega_b$, where $\Omega_b$ is the bounce frequency.
 
 At this stage it is instructional to introduce the notion of the loss cone pitch angle, $\alpha_L$.  A particle with $\alpha \leq \alpha_L$ will mirror at or below $\approx 100$ km altitude in the atmosphere. A particle at those altitudes will encounter Earth's atmosphere and has a significant probability of Coulomb scattering with atmospheric particles and be lost to the atmosphere.
 
