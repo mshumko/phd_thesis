@@ -5,7 +5,7 @@ The radiation belt plasma is at times unstable which in turn generate electric a
 
 Electron microbursts, henceforth referred to as microbursts, are typically observed by low Earth orbiting spacecraft, sounding rockets, and high altitude balloons as a sub-second impulse of electrons. Some of the most intense microbursts have electron fluxes that are a factor of 10 to 100 above the background (for example see Fig. 7 in \citet{Blake1996}). Since they were first reported by \citet{Anderson1964}, the intense transient nature of microbursts have compelled countless researchers to understand their properties, their effects on the environment, and the physical mechanism(s) that create microbursts. Microbursts are widely believed to be created by wave-particle scattering between a plasma wave called whistler mode chorus and outer radiation belt electrons, although many details regarding the scattering mechanism are unconstrained or unknown. The goal of this dissertation is to study the wave-particle scattering mechanism that scatters electron microbursts. 
 
-This chapter serves as an introduction to the fundamental physical concepts that are essential to understand wave-particle interactions in Earth's magnetosphere. We will first derive the motion of individual charged particles in Earth's electric and magnetic fields. Next we will cover how various groups of charged particles coalesce to form the major particle populations in the magnetosphere. Then, we will cover the various mechanisms that accelerate and scatter particles in the magnetosphere. Lastly, we will review the basics of microbursts as a jumping-off point for the rest of the dissertation. 
+This chapter serves as an introduction to the fundamental physical concepts that are essential to understand wave-particle interactions in Earth's magnetosphere. We will first derive the motion of individual charged particles in Earth's electric and magnetic fields. Next we will cover how various groups of charged particles coalesce to form the major particle populations in the magnetosphere. Then, we will cover the various mechanisms that accelerate and scatter particles in the magnetosphere. Lastly, we will review microbursts, which is one of the loss mechanism, as a jumping-off point for the rest of the dissertation. 
 
 \section{Charged Particle Motion in Electric and Magnetic Fields}\label{Intro:particle_motion}
 A charged particle trapped in the magnetosphere will experience three types of periodic motion in Earth's nearly dipolar magnetic field. The three motions are ultimately due to the Lorentz force that a particle of momentum $\vec{p}$, charge $q$, and velocity $\vec{v}$ experiences in an electric field $\vec{E}$ and magnetic field $\vec{B}$ and is given by
@@ -160,14 +160,14 @@ One of the particle heating and transport mechanisms arises from the Earthward c
 \end{equation} As a particle convents Earthward, $B_f > B_i$ thus $v_\perp$ must increase. The dipole magnetic field amplitude can be written as
 
 \begin{equation}
-B(L, \theta) = \frac{31.2 \ \mathrm{\mu T}}{L^3}\sqrt{1 + 3 \cos^2 \theta}
-\end{equation} which implies that 
+B(L, \theta) = \frac{31.2 \ \mathrm{\mu T}}{L^3}\sqrt{1 + 3 \cos^2 \theta}.
+\end{equation} The change in $v^2_{\perp}$ can be found by taking the ratio of $B(L, \theta)$ at two different $L$ shells
 
 \begin{equation}
-\frac{v_{\perp \ f}^2}{v_{\perp \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^3.
-\end{equation}.
+\frac{v_{\perp \ f}^2}{v_{\perp \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^3
+\end{equation} thus the increase in $v_\perp \sim (L_i/L_f)^{3/2}$.
 
-In addition, as the particle convects Earthward the distance between the particle's mirror points decrease. If $J_2$ is conserved, the shrinking bounce path implies that $v_{||}$ must increase by 
+As the particle convects Earthward its $v_{||}$ also increases because the distance between the particle's mirror points decrease. If $J_2$ is conserved, the shrinking bounce path implies that $v_{||}$ must increase by 
 
 \begin{equation}
 \frac{v_{|| \ f}^2}{v_{|| \ i}^2} = \bigg( \frac{L_i}{L_f} \bigg)^k
@@ -175,23 +175,23 @@ In addition, as the particle convects Earthward the distance between the particl
 
 
 \subsection{Wave Resonance Heating}\label{Intro:wave_heating}
-Another mechanism that heats particles is due to particles resonating with plasma waves. A few of the electromagnetic wave modes responsible for particle acceleration (and deceleration) relevant to radiation belt dynamics are hiss, whistler mode chorus (chorus), and electromagnetic ion cyclotron (EMIC) waves. These waves are created by the loss cone instability that driven by an anisotropy of electrons for chorus waves, and protons for EMIC waves. The level of anisotropy can be quantified by the ratio of the perpendicular to parallel particle temperatures $(T_\perp/T_{||})$. A particle distribution is unstable when $T_\perp/T_{||} > 1$ which facilitates wave growth. Since electrons gyrate in a right-handed sense, the chorus waves also tend to be right hand circularly polarized \citep{Tsurutani1997}. The same argument applies to protons and left hand circularly polarized EMIC waves as well. 
+Another mechanism that heats particles is due to particles resonating with plasma waves. A few of the electromagnetic wave modes responsible for particle acceleration (and scattering) relevant to radiation belt dynamics are hiss, whistler mode chorus (chorus), and electromagnetic ion cyclotron (EMIC) waves. These waves are created by the loss cone instability that is driven by an anisotropy of electrons for chorus waves, and protons for EMIC waves. The level of anisotropy can be quantified by the ratio of the perpendicular to parallel particle temperatures $(T_\perp/T_{||})$. A particle distribution is unstable when $T_\perp/T_{||} > 1$. Since electrons gyrate in a right-handed sense, the chorus waves also tend to be right hand circularly polarized \citep{Tsurutani1997}. The same argument also applies to protons and left hand circularly polarized EMIC waves. 
 
-These circularly polarized waves can resonate with electrons and/or protons when their combined motion results in a static $\vec{E}$. One example of a resonance between a right hand circularly polarized wave and an electron is shown in Fig. \ref{Intro:resonance} and is termed the cyclotron resonance. An electron's $v_{||}$ and the wave's parallel wave vector, $k_{||}$ are in opposite directions such that the wave frequency $\omega$ is Doppler shifted to an integer multiple of the $\Omega_e$ at which point the electron feels a static electric field and is accelerated or decelerated. This acceleration happens when a resonance condition is satisfied between a wave and a particle for which we will now derive an illustrative toy model.
+These circularly polarized waves can resonate with electrons and/or protons when their relative motion results in a static $\vec{E}$. One example of a resonance between a right hand circularly polarized wave and an electron is shown in Fig. \ref{Intro:resonance_diagram}. The electron's $v_{||}$ and the wave's parallel wave vector, $k_{||}$ are in opposite directions such that the wave frequency $\omega$ is Doppler shifted to an integer multiple of the $\Omega_e$ where the electron feels a static electric field and is accelerated or decelerated. Quantitatively, this resonance condition is easier to understand with the following toy model.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{1_resonance.png}
 \caption{The trajectories of an electron and a right-hand circularly polarized wave during a cyclotron resonance. The electron's $v_{||}$ and the wave's $k_{||}$ are in opposite directions such that the wave's frequency is Doppler shifted to a integer multiple of the electron cyclotron frequency. Figure from \citep{Tsurutani1997}.}
-\label{Intro:resonance}
+\label{Intro:resonance_diagram}
 \end{figure}
 
 Assume a uniform magnetic field $\vec{B} = B_0 \hat{z}$ with a parallel propagating ($k = k\hat{z}$), right-hand circularly polarized wave. The wave's electric field as a function of position and time can be written as
 
 \begin{equation}
-\vec{E} = E_0 (\cos{(\omega t - kz)}\hat{x} + \sin{(\omega t - kz)}\hat{y}) 
-\end{equation} which is more clearly expressed by taking the dot product to find $\vec{E}$ in the $\hat{\theta}$ direction
+\vec{E} = E_0 (\cos{(\omega t - kz)}\hat{x} + \sin{(\omega t - kz)}\hat{y}).
+\end{equation} The angular component of $\vec{E}$ that will effect the particle's $v_\perp$ is 
 \begin{equation}
-E_\theta = \vec{E} \times \hat{\theta} = E_0 \cos{(\omega t - kz + \theta)}.
+E_\theta = \vec{E} \cdot \hat{\theta} = E_0 \cos{(\omega t - kz + \theta)}.
 \end{equation} Now assume that the electron is traveling in the $-\hat{z}$ direction with a velocity $\vec{v} = -v_0 \hat{z}$ so its time dependent position along $\hat{z}$ is
 
 \begin{equation}
@@ -200,15 +200,15 @@ z(t) = -v_0 t
 
 \begin{equation}
 \theta(t) = -\Omega t + \theta(0)
-\end{equation} where the first negative sign comes from the electron's negative charge. Now we put this all together and express the electric field and the force that the electron will experience
+\end{equation} where the first negative sign comes from the electron's negative charge. Now we put this all together and find the force that the electron will experience
 
 \begin{equation}
 m \frac{dv_\theta}{dt} = qE_\theta = qE_0 \sin{((\omega + kv_0 - \Omega)t + \theta(0))}.
-\end{equation} This is a relatively complex expression, but when the time dependent component, 
+\end{equation} This is a relatively complex expression, but when the time dependent component is 0, i.e. 
 
 \begin{equation} \label{Intro:resonance}
 \omega + kv_0 - \Omega = 0,
-\end{equation} the electron will be in a static electric field which will accelerate or decelerate the electron depending on $\theta_0$, the phase between the wave and the electron. \textcolor{red}{Show Bortnik 2008 plot?} The expression in Eq. \ref{Intro:resonance} is commonly referred to as the resonance condition and is more generally written as 
+\end{equation} the electron will feel a static electric field and be accelerated or decelerated depending on $\theta_0$, the phase between the wave and the electron. The expression in Eq. \ref{Intro:resonance} is commonly referred to as the resonance condition and is more generally written as 
 
 \begin{equation} \label{Intro:resonance_general}
 \omega - k_{||} v_{||} = \frac{n \Omega_e}{\gamma}
@@ -225,7 +225,7 @@ Now that we have seen two general mechanisms with which particles are accelerate
 
 Another particle loss (and acceleration) mechanism is driven by ultra low frequency (ULF) waves and is called radial diffusion. Radial diffusion is the transport of particles from high to low phase space density, $f$. If the transport is radially inward, particles will appear to be accelerated. On the other hand, radially outward radial diffusion can transport particles through the magnetopause where they will be lost to the solar wind. \citet{Reeves2013} investigated the driver of particle acceleration during the October 2012 storm and observationally found that inward radial diffusion was not dominant, rather local acceleration via wave-resonance heating (i.e. particle diffusion in pitch angle and energy which will be described below) appeared to be the dominant acceleration mechanism.
 
-The loss mechanism central to this dissertation is pitch angle and energy scattering of electrons by waves. Some of the waves that scatter electrons in energy and pitch angle in the inner magnetosphere are: plasmaspheric hiss \citep[e.g.][]{O'Brien2014, Breneman2015}, EMIC waves \citep[e.g.][]{Hendry2017, Capannolo2019energetic}, and chorus waves \citep[e.g.][]{Breneman2017, Kasahara2018, Ozaki2019}. These wave-particle interactions occur when the resonance condition in Eq. \ref{Intro:resonance_general} is satisfied at which point the particle's energy and $\alpha$ is modified by the wave. More details regarding the theory of pitch angle and energy diffusion is given in Chapter \textcolor{red}{X}. If the wave changes $\alpha$ towards $0$ such that $\alpha < \alpha_{LC}$, the particle's mirror point lowers to less than $100$ km altitude where the particle can be lost due collisions with air. One manifestation of pitch angle scattering of particles into the loss cone are microbursts: a sub-second durtaion impulse of electrons.
+The loss mechanism central to this dissertation is pitch angle and energy scattering of electrons by waves. Some of the waves that scatter electrons in energy and pitch angle in the inner magnetosphere are: plasmaspheric hiss \citep[e.g.][]{O'Brien2014, Breneman2015}, EMIC waves \citep[e.g.][]{Hendry2017, Capannolo2019energetic}, and chorus waves \citep[e.g.][]{Breneman2017, Kasahara2018, Ozaki2019}. These wave-particle interactions occur when the resonance condition in Eq. \ref{Intro:resonance_general} is satisfied at which point the particle's energy and $\alpha$ is modified by the wave. More details regarding the theory of pitch angle and energy diffusion is given in Chapter \ref{CH:mageis_microburst}. If the wave changes $\alpha$ towards $0$ such that $\alpha < \alpha_{LC}$, the particle's mirror point lowers to less than $100$ km altitude where the particle can be lost due collisions with air. One manifestation of pitch angle scattering of particles into the loss cone are microbursts: a sub-second durtaion impulse of electrons.
 
 \section{Microbursts}\label{Intro:microbursts}
 Microbursts were first found in high altitude balloon measurements of bremsstrahlung X-rays emitted by microburst electrons impacting the atmosphere by \citet{Anderson1964}. In the following years, numerous balloon flights expanded our knowledge of non-relativistic microbursts (relativistic microbursts have not yet been observed by high altitude balloons) by quantifying the microburst spatial extent, temporal width, occurrence frequency, extent in L and MLT, and their source (a local plasma instability vs. a propagating disturbance in the magnetosphere) \citep[e.g.][]{Trefall1966, Brown1965_2, Barcus1966, Parks1967}. Since then, non-relativistic and relativistic ($> 500$ keV) microbursts electrons have been directly observed in LEO with spacecraft including the Solar Anomalous and Magnetospheric Particle Explorer (SAMPEX) \citep[e.g.][]{Blake1996, Blum2015, Lorentzen2001a, Lorentzen2001b, Nakamura1995, Nakamura2000, O'Brien2003, O'Brien2004, Greeley2019, Douma2017, Douma2019},  Montana State University's (MSU) Focused Investigation of Relativistic Electron Bursts: Intensity, Range, and Dynamics II (FIREBIRD-II) \citep{Spence2012, Klumpar2015, Crew2016, Anderson2017, Breneman2017}, and Science Technologies Satellite (STSAT-I) \citep[e.g.][]{Lee2005, Lee2012}. An example microburst time series is shown in Fig. \ref{Intro:microbursts} and was observed by the FIREBIRD-II CubeSats. The prominent features of the example microbursts in Fig. \ref{Intro:microbursts} are their $< 1$ second duration, half order of magnitude increase in count rate above the falling background, and their approximately 200-800 keV energy extent.
