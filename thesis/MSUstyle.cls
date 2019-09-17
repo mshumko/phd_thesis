@@ -1747,7 +1747,14 @@
 
 
 %% setup reference page title and TOC entry
-\newcommand{\refname}{References Cited}
+\newcommand{\refname}{
+%\topskip0pt
+\vspace*{\fill}
+\hspace{0.3\textwidth} REFERENCES CITED
+\vspace*{\fill}
+}
+
+
 \newcommand{\references}{%
   \ifbibpage
   \typeout{*****************     \refname    ******************}
