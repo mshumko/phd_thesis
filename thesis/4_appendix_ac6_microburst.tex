@@ -10,14 +10,12 @@ Here we derive the integral form of $\bar{F}(s)$ under the following assumptions
 \begin{enumerate}
 \item microbursts are circular with radius $r$
 \item microbursts are randomly and uniformly distributed around AC6.
-\end{enumerate}
-
-First recall the area $A(r, s)$, given in Eq. 4 in the main text and copied here for convenience
+\end{enumerate} Assuming the geometry in Fig. \ref{fig5} and the area $A(r, s)$ given in Eq. \ref{circle_circle_intersect} (copied here for convenience)
 \begin{equation}
-A(r, s) = 2r^2 \cos^{-1}{\Big( \frac{s}{2r} \Big)} - \frac{s}{2} \sqrt{4r^2 - s^2}.
-\end{equation} A circular microburst who's center lies in $A(r, s)$ will be observed by both AC6 units and is counted in $\bar{F}(s)$. Now we derive the integral form of $\bar{F}(s)$ that accounts for the different spacecraft separations and microburst sizes that are distributed by a hypothesized PDF $p(r, \theta)$.
+A(r, s) = 2r^2 \cos^{-1}{\Big( \frac{s}{2r} \Big)} - \frac{s}{2} \sqrt{4r^2 - s^2},
+\end{equation} a circular microburst who's center lies in $A(r, s)$ will be observed by both AC6 units and is counted in $\bar{F}(s)$. With $A(r, s)$ we can derive the integral form of $\bar{F}(s)$ that accounts for the different spacecraft separations and microburst sizes that are distributed by a hypothesized $p(r | \theta)$.
 
-First we will account for the effects of various spacecraft separation, assuming all microbursts are one size. For reference choose of radius, $r_0$ and spacecraft separation, $s_0$ such that $A(r_0, s_0) > 0$ which implies that some number of microbursts, $n_0$ will be simultaneously observed. Now, if for example the spacecraft separation (or microburst radius) is changed such that the area doubles, the second assumption implies that the number of microbursts observed during the same time interval must double as well. This can be expressed as 
+First we will account for the effects of various spacecraft separation, assuming all microbursts are one size. As a reference, choose of radius, $r_0,$ and spacecraft separation, $s_0$, such that $A(r_0, s_0) > 0$. This condition implies that some number of microbursts, $n_0$, will be simultaneously observed. Now, if the spacecraft separation changes such that the area doubles, the second assumption implies that the number of microbursts observed during the same time interval must double as well. This can be expressed as 
 
 \begin{equation} \label{density_eq}
 \frac{n_0}{A(r_0, s_0)} = \frac{n}{A(r, s)}
@@ -25,35 +23,32 @@ First we will account for the effects of various spacecraft separation, assuming
 
 \begin{equation}
 n(r, s) = \bigg( \frac{n_0}{A(r_0, s_0)} \bigg) A(r, s)
-\end{equation} it is more clear that the number of microbursts of size $r$ observed at separation $s$ is just $A(r, s)$ scaled by the reference microburst area density. The cumulative number of microbursts observed above $s$ is then
+\end{equation} it is more clear that the number of microbursts of size $r$ observed at separation $s$ is just $A(r, s)$ scaled by a reference microburst area density. The cumulative number of microbursts observed above $s$ is then
 
 \begin{equation}
-N(r, s) = \int_{s}^\infty n(r, s') ds' = \bigg( \frac{n_0}{A(r_0, s_0)} \bigg) \int_{s}^\infty A(r, s') ds'.
-\end{equation} Lastly, $\bar{F}(s)$ for a single $r$ is then
+N(r, s) = \int_{s}^\infty n(r, s') ds' = \bigg( \frac{n_0}{A(r_0, s_0)} \bigg) \int_{s}^\infty A(r, s') ds'
+\end{equation} and $\bar{F}(s)$ for a single $r$ is
 
 \begin{equation}
 \bar{F}(s) = \frac{N(s)}{N(0)} = \frac{\int_{s}^\infty A(r, s') ds'}{\int_{0}^\infty A(r, s') ds'}
 \end{equation}
 
-To incorporate a continuous microburst PDF such as $p(r) = p_1 \delta (r-r_1) + p_2 \delta (r-r_2) + ...$ we sum up the weighted number of microbursts that each size contributes to $N(s)$ i.e.
+To derive the effects of a continuous microburst PDF on $\bar{F}(s)$, consider a microburst size distribution such as $p(r) = p_1 \delta (r-r_1) + p_2 \delta (r-r_2) + ...$ The approach to estimate $\bar{F}(s)$ is similar, except now we sum the weighted number of microbursts that each microburst size contributes to $N(s)$ i.e.
 
 \begin{equation}
 N(s) = \bigg( \frac{n_0}{A(r_0, s_0)} \bigg) \bigg( \int_{s}^\infty p_1 A(r_1, s') ds' + \int_{s}^\infty p_2 A(r_2, s') ds' + ...\bigg)
-\end{equation}
-
-The last step is to convert the sum of Dirac Delta functions into a continuous PDF $p(r)$ after which 
+\end{equation} where the $r_1$, $r_2$... terms in each integral came from integrating over the Dirac Delta function. The last step is to convert from the above sum into a continuous PDF
 
 \begin{equation}
 N(s) = \bigg( \frac{n_0}{A(r_0, s_0)} \bigg) \displaystyle\int\displaylimits_{s}^{\infty} \displaystyle\int\displaylimits_0^{\infty} A(r, s') p(r) dr ds'.
 \end{equation} With these considerations, $\bar{F}(s)$ is then given by 
 
 \begin{equation} \label{analytic_integral}
-\bar{F}(s, \theta) = \frac{\displaystyle\int\displaylimits_{s}^{\infty} \displaystyle\int\displaylimits_0^{\infty} A(r, s') p(r, \theta) dr ds'}{\displaystyle\int\displaylimits_{0}^{\infty} \displaystyle\int\displaylimits_0^{\infty} A(r, s') p(r, \theta) dr ds'}
+\bar{F}(s, \theta) = \frac{\displaystyle\int\displaylimits_{s}^{\infty} \displaystyle\int\displaylimits_0^{\infty} A(r, s') p(r, \theta) dr ds'}{\displaystyle\int\displaylimits_{0}^{\infty} \displaystyle\int\displaylimits_0^{\infty} A(r, s') p(r, \theta) dr ds'}.
 \end{equation}
 \clearpage 
 
 \noindent\textbf{Text S2: Most probable parameter values for continuous microburst PDFs}
-
 Besides the one and two-size microburst models described in the main text, continuous PDFs such as the log-normal, Weibull, and Maxwellian were fit and their optimal parameters presented here.
 
 For the Maxwellian PDF, we assumed the following form
@@ -104,5 +99,16 @@ percentile (\%) & c & $r_0$ & $\lambda$ \\
 
 \clearpage 
 \noindent\textbf{Text S3: Comparison of microburst to whistler mode chorus $\bar{F}(s)$}
+In this appendix we compare the equatorial distribution of microbursts sizes to the distribution of lower band whistler mode chorus waves near the magnetic equator. The wave data was obtained with the Time History of Events and Macroscale Interactions during Substorms (THEMIS) spacecraft from 2007 to 2017. Here we provide a brief overview of the procedure used to identify chorus waves which is described in more detail in \citet{Agapitov2018}. The THEMIS search coil magnetometer instrument was used to make magnetic field measurements in six logarithmically-spaced frequency channels between 1-4 kHz. This data was then used to cross-correlate the chorus wave amplitudes between pairs of THEMIS spacecraft, and a dataset of chorus waves was made.
 
-\textcolor{red}{TBD}
+For this exploratory study, the spatial distribution of chorus waves was explored as a function of low and high wave amplitudes (10 pT threshold). In each 50 km THEMIS separation bin (perpendicular to the background magnetic field), the probability of observing a highly correlated chorus wave (cross-correlation greater than 0.8) was calculated. This probability is defined as the number of correlated low (high) amplitude waves, divided by the total number of low (high) amplitude waves observed. The low and high amplitude chorus wave distributions are shown in the red and blue curves in  Fig. \ref{fig_appendixc_1}. 
+
+The AC6 equatorial microburst dataset was analyzed in the same way to make a direct comparison. The probability of observing a coincident microburst in each equatorial separation bin (the cumulative estimates were not used) is shown with the black trace in Fig. \ref{fig_appendixc_1}.
+
+Figure \ref{fig_appendixc_1} shows a trend with a rapid probability drop off for $> 10$ pT waves and microbursts within the first few hundred km. The $< 10$ pT wave probabilities also initially drop off and then remain relatively high at higher THEMIS separations. These results hint that the microburst probability distribution more closely tracks higher amplitude lower band whistler mode chorus wave distribution. A detailed comparison is outside the scope of this work, but a future study will need to address a few sources of systematic bias that may effect these results. A few biases include the magnetic field mapping error for the AC6 microbursts and much wider MLT coverage of THEMIS compared to AC6. With these biases in mind, other wave modes should also be compared.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{4_compare_chorus_microburst_fraction_cc_thresh_8.png}
+\caption{Comparison of the highly correlated lower band whistler mode chorus wave distribution estimated by \citet{Agapitov2018} to the AC6 equatorial microburst distribution. The chorus waves were split up by wave amplitude into a low ($B_w < 10$ pT) and high amplitude ($B_w > 10$ pT) subsets. The red and blue curves show the probability of observing low or high amplitude, highly correlated chorus waves in each THEMIS separation bin. The black curve shows the AC6 equatorial microburst distribution in the same format. The errors bars show the standard error estimated using Poisson statistics.}
+\label{fig_appendixc_1}
+\end{figure}
