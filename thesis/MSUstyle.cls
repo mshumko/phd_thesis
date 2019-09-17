@@ -1747,8 +1747,8 @@
 
 
 %% setup reference page title and TOC entry
+%% Mike Shumko midified this to write "REFERENCES CITED" in the middle of the page.
 \newcommand{\refname}{
-%\topskip0pt
 \vspace*{\fill}
 \hspace{0.3\textwidth} REFERENCES CITED
 \vspace*{\fill}
@@ -1756,6 +1756,7 @@
 
 
 \newcommand{\references}{%
+  \refname % Mike's addition.
   \ifbibpage
   \typeout{*****************     \refname    ******************}
   \newlinestretch{1.0}
