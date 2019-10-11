@@ -3,10 +3,11 @@ import matplotlib.pyplot as plt
 
 # Toggle between showing a few microbursts with circles to showing many 
 # microburst centers only.
-ILLUSTRATION = False 
+ILLUSTRATION = True 
+MICROBUST_AREA_OUTLINE=False
 grid_size = 2
 microburst_radius = 1
-sc_locations = np.array([[0, -0.5], [0, 0.5]])
+sc_locations = np.array([[0, 0.7], [0, -0.7]])
 
 microburst = {}
 
@@ -48,6 +49,10 @@ for c in range(plot_n):
         circles[c] = plt.Circle((microburst['center'][c, 0], microburst['center'][c, 1]), 
                         microburst['radius'][c], color=color, alpha=0.1, lw=2)
         ax.add_artist(circles[c])
+
+        if MICROBUST_AREA_OUTLINE:
+            # Outline the center area around top spacecraft
+            ax.add_artist(plt.Circle(sc_locations[0], microburst_radius, color='b', ls='--', fill=False))
     centers[c] = plt.scatter(microburst['center'][c, 0], microburst['center'][c, 1], c=color)
     
 # Spacecraft ceneter locations.
